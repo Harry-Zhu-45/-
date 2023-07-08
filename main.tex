@@ -8,6 +8,7 @@
 
 \usepackage{graphicx}
 \usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{slashed}
 \usepackage{url}
 
 \newcommand*{\dif}{\mathop{}\!\mathrm{d}} % 定义微分算子
@@ -265,25 +266,25 @@ $\tau$ 是粒子寿命，$\Gamma$ 是粒子衰变宽度
 
 在 $e^+ e^-$ 对撞机上可以利用伴随产生的粒子来测量粒子质量和产生截面
 
-\subsection{$\not{E}_T, H_T, m_{eff}$}
+\subsection{\texorpdfstring{$\slashed{E}_T$}{ET}, \texorpdfstring{$H_T$}{HT}, \texorpdfstring{$m_{eff}$}{meff}}
 
 对撞机上的探测器不能测量中微子和假想的暗物质粒子，它们的存在会导致测量到的横向总动量非零，可用所有可见粒子 $i$ 的横向动量定义 \emph{横向丢失动量}
 
 \begin{equation}
-    \not{p}_T \equiv -\sum_i p^i_T
+    \slashed{p}_T \equiv -\sum_i p^i_T
 \end{equation}
 
 和 \emph{横向丢失能量}
 
 \begin{equation}
-    \not{E}_T \equiv |\not{p}_T|
+    \slashed{E}_T \equiv |\slashed{p}_T|
 \end{equation}
 
 (亦记为 $E^{miss}_T$)，以表征不可见粒子的能量标度
 
 \emph{喷注} $j_i$ 的横向动量的 \emph{标量和} $H_T \equiv \sum_i p^{j_i}_T$ 表征硬散射过程中喷注的能量标度
 
-\emph{有效质量} $m_{eff} \equiv \not{E}_T + H_T$ 表征硬散射过程中喷注加不可见粒子的能量标度
+\emph{有效质量} $m_{eff} \equiv \slashed{E}_T + H_T$ 表征硬散射过程中喷注加不可见粒子的能量标度
 
 \section{对称性与守恒量}
 
@@ -351,7 +352,7 @@ $n$ 维李群的群元 $R$ 可用 $n$ 个独立实参数 $\theta^a$ 描写，恒
 
 (注意：上述表达式采用爱因斯坦求和约定，对重复的指标从 $1$ 至 $n$ 求和)
 
-\subsection{典型的李群：$U(n)$ 群和 $SU(n)$ 群}
+\subsection{典型的李群：\texorpdfstring{$U(n)$}{U(n)} 群和 \texorpdfstring{$SU(n)$}{SU(n)} 群}
 
 在线性代数中，矩阵具有乘法，因而可逆方阵可依照自身乘法关系构成群
 
@@ -401,7 +402,7 @@ $n$ 维李群的群元 $R$ 可用 $n$ 个独立实参数 $\theta^a$ 描写，恒
 
 实验表明，质子和中子质量相近，强相互作用性质相似。在强相互作用中互换质子和中子，系统性质不会改变。类比于自旋，海森堡在 1932 年提出 \emph{同位旋} 的概念加以解释。
 
-\emph{同位旋} $I$ 由 $SU(2)$ 群描述，生成元记为 $I^a$；在 $SU(2)$ 的 $2$ 维和 $3$ 维表示中，$I^3$ 分别为 $diag(1/2,-1/2)$ 和 $diag(1, 0,-1)$，对角元是态的 $I^3$ 本征值。
+\emph{同位旋} $I$ 由 $SU(2)$ 群描述，生成元记为 $I^a$；在 $SU(2)$ 的 $2$ 维和 $3$ 维表示中，$I^3$ 分别为 $diag(1/2, -1/2)$ 和 $diag(1, 0, -1)$，对角元是态的 $I^3$ 本征值。
 
 质子和中子的同位旋为 $I=1/2$，构成 \emph{二重态}
 
@@ -580,7 +581,7 @@ CP 宇称在强和电磁相互作用中守恒；虽然在弱相互作用中 P �
 
 \section{量子电动力学}
 
-\subsection{$U(1)$ 规范对称性}
+\subsection{\texorpdfstring{$U(1)$}{U(1)} 规范对称性}
 
 时空坐标的函数称为 \emph{场}。在 \emph{量子场论} 中，场被量子化，而 \emph{粒子是场的激发态}，粒子间相互作用来源于各种场之间的相互作用。场的运动规律由 \emph{最小作用量原理} 决定，作用量 $S=\int \dif^4 x \mathcal{L}(x)$，其中拉氏量 $\mathcal{L}(x)$ 是用场表达出来的。
 
@@ -663,7 +664,7 @@ $\mathcal{L}_{QED}$ 中 $\overline{f} (i \gamma^\mu \partial_\mu - m_f)f$ 项与
 经过傅立叶变换之后，动量空间中的旋量系数 $u(p, \lambda)$ 和 $v(p, \lambda)$ 满足
 
 \begin{equation}
-    (\not{p} - m_f) u(p, \lambda) = 0, \quad (\not{p} + m_f) v(p, \lambda) = 0, \quad \not{p} \equiv \gamma^\mu p_\mu
+    (\slashed{p} - m_f) u(p, \lambda) = 0, \quad (\slashed{p} + m_f) v(p, \lambda) = 0, \quad \slashed{p} \equiv \gamma^\mu p_\mu
 \end{equation}
 
 $\lambda = \pm 1$ 称为 \emph{螺旋度}，是自旋在动量方向上的投影被归一化后的值
@@ -671,7 +672,7 @@ $\lambda = \pm 1$ 称为 \emph{螺旋度}，是自旋在动量方向上的投影
 $\lambda = +1 (-1)$ 对应于右旋 (左旋) 极化的费米子，螺旋度求和关系为
 
 \begin{equation}
-    \sum_{\lambda=\pm 1} u(p, \lambda) \overline{u}(p, \lambda) = \not{p} + m_f, \quad \sum_{\lambda=\pm 1} v(p, \lambda) \overline{v}(p, \lambda) = \not{p} - m_f
+    \sum_{\lambda=\pm 1} u(p, \lambda) \overline{u}(p, \lambda) = \slashed{p} + m_f, \quad \sum_{\lambda=\pm 1} v(p, \lambda) \overline{v}(p, \lambda) = \slashed{p} - m_f
 \end{equation}
 
 $\mathcal{L}_{QED}$ 中 $-F^{\mu\nu} F_{\mu\nu}/4$ 项描述远离相互作用顶点时的光子
@@ -700,13 +701,13 @@ $\overline{f} (i \gamma^\mu \partial_\mu - m_f) f$ 项和 $-F_{\mu\nu} F^{\mu\nu
         \end{itemize}
     \item 传播子
         \begin{itemize}
-            \item 费米子传播子 $=\frac{i(\not{p} + m_f)}{p^2 - m_f^2 + i\varepsilon}$
+            \item 费米子传播子 $=\frac{i(\slashed{p} + m_f)}{p^2 - m_f^2 + i\varepsilon}$
             \item 光子传播子 $=\frac{-i g_{\mu\nu}}{p^2 + i\varepsilon}$
         \end{itemize}
     \item 电磁相互作用顶点：$=-i Q_f e \gamma^\mu$
 \end{itemize}
 
-\subsection{$e^+ e^- \to \mu^+ \mu^-$ 散射振幅}
+\subsection{\texorpdfstring{$e^+ e^- \to \mu^+ \mu^-$}{e+e- -> mu+mu-} 散射振幅}
 
 对于 QED 散射过程 $e^+ e^- \to \mu^+ \mu^-$ 的领头阶费曼图，利用费曼规则将它表达成 \emph{不变振幅}
 
@@ -718,12 +719,12 @@ $\overline{f} (i \gamma^\mu \partial_\mu - m_f) f$ 项和 $-F_{\mu\nu} F^{\mu\nu
 
 \begin{align}
     \frac{1}{4} \sum_{\lambda_1, \lambda_2, \lambda_1^\prime, \lambda_2^\prime} &= \frac{e^4}{4 q^2} \sum_{\lambda_1, \lambda_2, \lambda_1^\prime, \lambda_2^\prime} \left[\overline{v}(k_2, \lambda_2) \gamma^\mu u(k_1, \lambda_1) \overline{u}(k_1, \lambda_1) \gamma^\rho v(k_2, \lambda_2) \times \overline{u}(p_1, \lambda_1^\prime) \gamma_\mu v(p_2, \lambda_2^\prime) \overline{v}(p_2, \lambda_2^\prime) \gamma_\rho u(p_1, \lambda_1^\prime)\right] \\
-    &= \frac{e^2}{4 q^2} \mathrm{Tr}\left[(\not{k}_2-m_e)\gamma_\mu(\not{k}_1+m_e)\gamma_\rho\right] \mathrm{Tr}\left[(\not{p}_1+m_\mu)\gamma^\mu(\not{p}_2-m_\mu)\gamma^\rho\right]
+    &= \frac{e^2}{4 q^2} \mathrm{Tr}\left[(\slashed{k}_2-m_e)\gamma_\mu(\slashed{k}_1+m_e)\gamma_\rho\right] \mathrm{Tr}\left[(\slashed{p}_1+m_\mu)\gamma^\mu(\slashed{p}_2-m_\mu)\gamma^\rho\right]
 \end{align}
 
 每个电磁相互作用顶点贡献一个耦合常数 $e$，故 $M \propto e^2$，$|M|^2 \propto e^4$
 
-\subsection{$e^+ e^- \to \mu^+ \mu^-$ 散射截面}
+\subsection{\texorpdfstring{$e^+ e^- \to \mu^+ \mu^-$}{e+e- -> mu+mu-} 散射截面}
 
 对狄拉克矩阵乘积作求迹运算，得
 
@@ -749,7 +750,7 @@ $\overline{f} (i \gamma^\mu \partial_\mu - m_f) f$ 项和 $-F_{\mu\nu} F^{\mu\nu
     &= \frac{4\pi \alpha^2 \beta_\mu}{3s\beta_e} \left(1+\frac{2 m^2_e}{s}\right) \left(1+\frac{2 m^2_\mu}{s}\right)
 \end{align}
 
-\subsection{$ep$ 库仑散射}
+\subsection{\texorpdfstring{$ep$}{ep} 库仑散射}
 
 在非相对论性的经典物理学中，假设质子在散射前后都是静止的，则初末态电子的运动速率相同，记为 $v$，运动方向相差散射角 $\theta$，那么，库仑力引起的微分散射截面为
 
@@ -831,7 +832,7 @@ Compton 在实验中证实了波长变化 $\Delta\lambda$ 与散射角 $\theta$ 
     \frac{\dif\sigma}{\dif\cos\theta} = \frac{\pi \alpha^2 {\omega^\prime}^2}{m_e^2 \omega^2} \left(\frac{\omega^\prime}{\omega} + \frac{\omega}{\omega^\prime} - \sin^2 \theta\right) \quad (Klein-Nishina)
 \end{equation}
 
-\subsection{$e^+ e^- \to \gamma\gamma$}
+\subsection{\texorpdfstring{$e^+ e^- \to \gamma\gamma$}{e+e- -> gamma gamma}}
 
 设质心系中某个末态光子与初态电子运动方向的夹角为 $\theta$，QED 领头阶给出的微分散射截面为
 
@@ -863,7 +864,7 @@ $u$ 和 $d$ 的味对称性就是 $SU(2)$ 同位旋对称性，$SU(3)_F$ 味对�
 
 由于 $s$ 夸克的质量大于 $u$ 和 $d$ 夸克的质量，$SU(3)_F$ 味对称性不是严格成立的，同个多重态中的粒子存在不小的质量差异
 
-\subsection{$SU(4)_F$ 味对称性}
+\subsection{\texorpdfstring{$SU(4)_F$}{SU(4)F} 味对称性}
 
 把 $c$ 夸克也加入进来，上述对称性可以进一步推广为 $SU(4)_F$ 味对称性
 
@@ -1009,7 +1010,7 @@ $-\frac{1}{4} G^a_{\mu\nu} G^{a, \mu\nu}$ 项带来非阿贝尔规范理论特�
 
 进一步研究表明，有些部分子与夸克具有相同的量子数，它们就是 \emph{夸克}；其它部分子是电中性的，后来证实是 \emph{胶子}
 
-\subsection{$e^- + p \to e^- + X$ 深度非弹性散射}
+\subsection{\texorpdfstring{$e^- + p \to e^- + X$}{e-p -> e-X} 深度非弹性散射}
 
 动量转移很大时，忽略电子质量，有
 
@@ -1296,11 +1297,11 @@ $D_i^h (z, \mu^2)$ 的演化由 \emph{微扰 QCD} 给出
     \item \emph{Anti-$k_T$ 算法}: $p=-1$，从最硬的粒子开始，\emph{红外-共线稳定}
 \end{itemize}
 
-\subsection{$b$ 喷注和 $\tau$ 喷注}
+\subsection{\texorpdfstring{$b$}{b} 喷注和 \texorpdfstring{$\tau$}{tau} 喷注}
 
 通过多种运动学变量发展 \emph{喷注标记技术}，能够区分来自 $b$ 夸克和 $\tau$ 轻子的喷注与来自 \emph{轻夸克} 和 \emph{胶子} 的喷注
 
-\emph{b 喷注}: 标记效率约为 $60-80\%$
+\emph{$b$ 喷注}: 标记效率约为 $60-80\%$
 
 B 介子 (如 $B^0$ 和 $B^\pm$) 衰变引起偏移的 \emph{第二顶点}
 
@@ -1647,7 +1648,7 @@ $\overline{\theta}_{12} \sim \ang{33}, \overline{\theta}_{23} \sim \ang{41}$ (�
     \item 反应堆中微子振荡 $\to \overline{\theta}_{13}$
 \end{itemize}
 
-\subsection{$e^+e^-$ 湮灭}
+\subsection{\texorpdfstring{$e^+e^-$}{e+e-} 湮灭}
 
 通过 \emph{电磁流} 和 \emph{弱中性流} 相互作用，$e^+ e^-$ 可湮灭成一对正反费米子 $f \overline{f}$
 
@@ -1673,7 +1674,7 @@ $3.7\ GeV \le \sqrt{s} \le 10\ GeV$ 处，
     R \simeq 3 \left[2 \left(-\frac{1}{3}\right)^2 +  2 \left(\frac{2}{3}\right)^2 \right] = \frac{10}{3}
 \end{equation}
 
-\subsection{$\beta$ 衰变}
+\subsection{\texorpdfstring{$\beta$}{beta} 衰变}
 
 弱相互作用引起原子核 $\beta$ 衰变
 
@@ -2006,7 +2007,7 @@ $\pi^- \to \mu^- \overline{\nu}_\mu$ 分支比为 $99.9877\%$，$\pi^- \to e^- \
 
 可惜的是，这种回答与我们以前介绍的电磁自能具有相同的缺陷，那就是它正比于在理论中无法约化的外来参数———夸克质量。一旦外来参数不存在，这一回答就会失效。因此量子色动力学对 $\pi$ 介子及其他赝戈德斯通粒子质量的计算虽然很漂亮，但从回答本原问题的角度看却仍不能令人满意。
 
-\section{一个 $93$ 分的答案}
+\section{一个 93 分的答案}
 
 计算核子或其他重子的质量是一个相当困难的低能量子色动力学的问题，通常的做法是利用巨型计算机进行格点量子色动力学计算。但是由于技术上的限制，迄今为止，在这类格点量子色动力学计算中采用的 $u$ 夸克和 $d$ 夸克质量都在它们实际质量的 $5$ 倍以上，由此得到的核子质量通常也要比实际值高出 $30\%$ 以上。
 
