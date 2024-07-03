@@ -2,21 +2,30 @@
 
 \section{概述}
 
-粒子物理学的理论基础是量子场论。
-
 \subsection{自然单位制}
 
-在粒子物理学中，为简便起见，经常采用自然单位制，取 $c=\hbar=k_B=1$
+粒子物理学的理论基础是量子场论，在量子场论中，为简便起见经常采用自然单位制：取 $c=\hbar=k_B=1$
 
-在自然单位制中，\emph{长度} 量纲与 \emph{时间} 相同，是 \emph{能量} 量纲的倒数，能量、质量、动量和温度具有相同量纲，可将能量单位电子伏特 $(\unit{eV})$ 视作唯一基本单位。
+在自然单位制下，\emph{长度}量纲与\emph{时间}相同，是\emph{能量}量纲的倒数，能量、质量、动量和温度具有相同量纲，可将能量单位电子伏特 $(\unit{eV})$ 视作唯一基本单位。
 
-\subsection{有理化的自然单位制}
+\begin{itemize}
+    \item 长度 $\sim$ 时间
+    \item 能量 $\sim$ 质量 $\sim$ 动量 $\sim$ 温度
+\end{itemize}
 
-精细结构常数没有量纲，在任何单位制下的数值为 $1/137.036$
+精细结构常数的表达式为：
 
-自然单位制 \emph{不可能} 将 $\hbar, c, \varepsilon_0$ 和 $e$ 这四个常数同时取为 $1$
+\begin{equation}
+    \alpha = \frac{e^2}{4 \pi \varepsilon_0 \hbar c} \approx \frac{1}{137.036}
+\end{equation}
 
-粒子物理学中，时常取真空介电常数 $\varepsilon_0=1$，则真空磁导率 $\mu_0=\frac{1}{\varepsilon_0 c^2}=1$
+精细结构常数是一个没有量纲的量，不随单位制的改变而改变，因此在任何单位制下都约为 $1/137.036$
+
+因此，在精细结构常数的约束下，任何单位制都不能把 $\hbar,c,\varepsilon_0,e$ 同时取为 $1$
+
+如果取真空介电常数 $\varepsilon_0=1$，则真空磁导率 $\mu_0=\frac{1}{\varepsilon_0 c^2}=1$，就是所谓的 Lorentz–Heaviside 单位制。
+
+% 如果取
 
 \subsection{基本相互作用}
 
@@ -1427,17 +1436,17 @@ $V_H(\Phi)$ 是希格斯标量场的 \emph{势能项}，依赖于 $\Phi^\dagger 
 
 希格斯场 \emph{势能} 的行为由二次项系数 $\mu^2$ 和四次项系数 $\lambda$ 决定；假设 $\lambda > 0$
 
-如果 $\mu^2 < 0$，势能项 $V_H(\Phi)$ 的最小值对应于 $\Phi^\dagger \Phi = 0$；希格斯场的真空期待值为 $\langle \Phi \rangle = \binom{0}{0}$，它在电弱规范变换下 \emph{不变}，故 \emph{规范对称性未受到破坏}
+如果 $\mu^2 < 0$，势能项 $V_H(\Phi)$ 的最小值对应于 $\Phi^\dagger \Phi = 0$；希格斯场的真空期待值为 $\Braket{\Phi} = \binom{0}{0}$，它在电弱规范变换下 \emph{不变}，故 \emph{规范对称性未受到破坏}
 
 如果 $\mu^2 > 0$，$\Phi^\dagger \Phi = 0$ 处变成 $V_H(\Phi)$ 的极大值，而最小值位于 $\Phi^\dagger \Phi = v^2/2$ 对应的 $3$ 维球面上，其中 $v = \sqrt{\mu^2/\lambda}$
 
-若压缩掉 $\phi^+$ 的实部和虚部两个维度，则 $V_H(\Phi)$ 在 $\phi^0$ 的实部和虚部坐标上呈现右图所示 \emph{墨西哥草帽状} 的形式；希格斯场的真空期待值位于上述 $3$ 维球面上的某一点，不失一般性，可取为 $\langle \Phi \rangle = \frac{1}{\sqrt{2}} \binom{0}{v}$
+若压缩掉 $\phi^+$ 的实部和虚部两个维度，则 $V_H(\Phi)$ 在 $\phi^0$ 的实部和虚部坐标上呈现右图所示 \emph{墨西哥草帽状} 的形式；希格斯场的真空期待值位于上述 $3$ 维球面上的某一点，不失一般性，可取为 $\Braket{\Phi} = \frac{1}{\sqrt{2}} \binom{0}{v}$
 
 电弱规范变换会 \emph{改变} 这个期待值，故真空态不满足电弱规范对称性；这种拉氏量满足对称性、真空态却不满足的现象称为 \emph{对称性自发破缺}
 
 \subsection{希格斯玻色子}
 
-以上述真空期待值 $\langle \Phi \rangle$ 为基础，考虑沿 $\phi^0$ 实轴扰动的实标量场 $H(x)$
+以上述真空期待值 $\Braket{\Phi}$ 为基础，考虑沿 $\phi^0$ 实轴扰动的实标量场 $H(x)$
 
 \begin{equation}
     \Phi(x) = \frac{1}{\sqrt{2}} \binom{0}{v + H(x)}, \quad \Phi^\dagger \Phi \to \frac{1}{2} (v+H)^2

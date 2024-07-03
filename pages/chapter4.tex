@@ -1,14 +1,14 @@
 \chapter{知乎学习内容}
 
-\section{Coleman 用铁磁体讲 ssb 的例子}
+\section{Coleman 用铁磁体讲 自发对称性破缺 的例子}
 
-\emph{知乎匿名回答}：
+\subsection{知乎匿名回答}
 
 the standard terminology is unfortunate，we don't describe the symmetry as hidden (by hidden he means \emph{the Hamilton possesses such symmetry while the ground state doesn't})，instead we call this situation ssb.
 
 In some sense we're the man in the ferromagnet，our symmetry is broken by the ferromagnet but the whole universe still has it. Such symmetry can be restored by going high energy or high temperature.
 
-\subsection{\href{https://www.zhihu.com/people/imserious}{西里尔斯 - 知乎}}
+\subsection{知乎\href{https://www.zhihu.com/people/imserious}{西里尔斯}的回答}
 
 无论是哈密顿量还是拉格朗日量，在“对称性破缺”前后的对称性都是一样的。
 
@@ -22,17 +22,17 @@ In some sense we're the man in the ferromagnet，our symmetry is broken by the f
 不难验证，这就是转动算符的本征算符
 
 \begin{equation*}
-    \langle\theta| e^{-\alpha \frac{\partial}{\partial \theta}} |m\rangle = \langle\theta| e^{im\alpha} |m\rangle
+    \Braket{\theta | e^{-\alpha \frac{\partial}{\partial \theta}} | m} = \Braket{\theta | e^{im\alpha} | m}
 \end{equation*}
 
-同样是互为对偶，为什么单粒子问题中的 $|x\rangle，|p\rangle$，没有偏好之分，而现实对在墨西哥帽这个问题中的 $|m\rangle，|\theta\rangle$ 却存在偏好？
+同样是互为对偶，为什么单粒子问题中的 $\ket{x}, \ket{p}$，没有偏好之分，而现实对在墨西哥帽这个问题中的 $\ket{m}, \ket{\theta}$ 却存在偏好？
 
 我们必须强调 \eqref{equ:1} 式的两边都是热力学极限下的多体态，并且它们都和环境之间往往存在强度正相关于粒子数的耦合 $\lambda \sim O(N^\nu)$。这样的环境耦合是客观上存在的 (否则系统不可被观测)，在零温下也由于量子涨落而不能消除 (玩具模型)。
 
 由于来自环境的微扰耦合一般会破坏掉对称性，墨西哥帽底部的无穷多简并就仅是一种理想上的近似。因为不同的 $|\theta\rangle$ 在环境的扰动下实际上与环境一起进行独立的演化。这样即便我们制备了 $|m\rangle$，其初始约化密度矩阵
 
 \begin{equation}
-    \rho_{\mathrm{red.}}(t=0) = |m\rangle \langle m| = \int \frac{\dif \theta_1}{\sqrt{2\pi}} \int \frac{\dif \theta_2}{\sqrt{2\pi}} e^{im(\theta_1-\theta_2)} |\theta_1\rangle \langle\theta_2|
+    \rho_{\text{red.}}(t=0) = \ket{m} \bra{m} = \int \frac{\dif \theta_1}{\sqrt{2\pi}} \int \frac{\dif \theta_2}{\sqrt{2\pi}} e^{im(\theta_1-\theta_2)} \ket{\theta_1} \bra{\theta_2}
     \label{equ:2}
 \end{equation}
 
@@ -46,7 +46,7 @@ In some sense we're the man in the ferromagnet，our symmetry is broken by the f
 因此，不难得知初始对称基态的相干性在短时间后会消失
 
 \begin{equation}
-    \rho_{\mathrm{red.}}(t \gg \hbar \lambda^{-1}) \approx \int \frac{\dif \theta}{2\pi} |\theta\rangle \langle\theta|
+    \rho_{\mathrm{red.}}(t \gg \hbar \lambda^{-1}) \approx \int \frac{\dif \theta}{2\pi} \ket{\theta} \bra{\theta}
     \label{equ:4}
 \end{equation}
 
